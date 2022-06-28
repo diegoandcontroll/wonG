@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import media, { DefaultBreakpoints } from 'styled-media-query';
+import theme from 'styles/theme';
 type breakpoint = keyof DefaultBreakpoints;
 export type MediaMatchProps = {
   lessThan?: breakpoint;
@@ -10,7 +11,8 @@ const mediaMatchModifiers = {
     ${media.lessThan(size)`display: block`}
   `,
   greaterThan: (size: breakpoint) => css`
-    ${media.greaterThan(size)`display: block`}
+    margin-left: ${theme.spacings.small};
+    ${media.greaterThan(size)`display: block`};
   `,
 };
 export default styled.div<MediaMatchProps>`
