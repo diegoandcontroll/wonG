@@ -92,7 +92,8 @@ export const HeaderFull = styled.nav<HeaderFullProps>`
     justify-content: space-between;
     opacity: ${isOpen ? 1 : 0};
     background: ${theme.colors.white};
-    position: absolute;
+    position: fixed;
+    z-index: ${theme.layers.menu};
     transition: opacity 0.3s ease-in-out;
     top: 0;
     left: 0;

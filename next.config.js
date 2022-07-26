@@ -12,4 +12,12 @@ module.exports = withPWA({
     dest: 'public',
     disable: !isProd,
   },
+  images: {
+    domains: [
+      'localhost',
+      'res.cloudinary.com',
+      'source.unsplash.com',
+      'https://source.unsplash.com',
+    ],
+  },
 });
