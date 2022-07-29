@@ -1,5 +1,10 @@
+import FormSignUp from 'components/FormSignUp';
 import Auth from 'templates/Auth';
 
-export default function SignUp() {
-  return <Auth title="Sign up">test</Auth>;
+export default function SignUpPage() {
+  return (
+    <Auth title="Sign up">
+      <FormSignUp />
+    </Auth>
+  );
 }

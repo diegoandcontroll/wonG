@@ -1,5 +1,9 @@
 import Auth from 'templates/Auth';
-
-export default function SignIn() {
-  return <Auth title="Sign in">TEST</Auth>;
+import SignIn from 'components/FormSignIn';
+export default function SignInPage() {
+  return (
+    <Auth title="Sign in">
+      <SignIn />
+    </Auth>
+  );
 }
