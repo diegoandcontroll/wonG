@@ -1,6 +1,7 @@
 import Heading from 'components/Heading';
 import Logo from 'components/Logo';
 import Image from 'next/image';
+import Link from 'next/link';
 import * as S from './styles';
 export type AuthProps = {
   title: string;
@@ -16,7 +17,11 @@ const Auth = ({ children, title }: AuthProps) => (
         objectFit="cover"
       />
       <S.BannerContent>
-        <Logo id="banner" />
+        <Link href="/">
+          <a>
+            <Logo id="banner" />
+          </a>
+        </Link>
         <div>
           <Heading>All your favorite games in one place</Heading>
           <S.Subtitle>

@@ -46,6 +46,7 @@ export const BannerContent = styled.div`
     a {
       width: fit-content;
       height: fit-content;
+      cursor: pointer;
     }
   `}
 `;
